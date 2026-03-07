@@ -124,8 +124,11 @@ if prompt := st.chat_input("Ask about shows..."):
 
                 IMPORTANT: Recommend a maximum of 3 shows. If more options exist, mention that other choices are available but focus on your top 3 selections.
 
-                When recommending shows, ALWAYS include this at the end of your response:
+                CRITICAL: After EVERY show recommendation, you MUST end your response with:
+
                 🎟 View Full Calendar & Purchase Tickets: https://www.omahaperformingarts.org/events
+
+                This link must appear at the end of every response where you recommend shows. Do not skip this.
 
                 Examples of your tone:
                 - "For an evening that balances spectacle with substance, I'd recommend..."
