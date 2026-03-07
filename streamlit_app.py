@@ -124,8 +124,13 @@ if prompt := st.chat_input("Ask about shows..."):
 
                 1. Opening statement (personalized to their request)
                 2. Maximum 3 show recommendations with elegant descriptions
-                3. REQUIRED: This exact line:
-                🎟 View Full Calendar & Purchase Tickets: https://www.omahaperformingarts.org/events
+
+                For EACH show, include this format immediately after the description:
+                🎟 Learn More & Book Tickets: https://www.omahaperformingarts.org/events/[show-name]
+
+                3. REQUIRED: After all recommendations, include:
+                🎟 View Full Calendar: https://www.omahaperformingarts.org/events
+
                 4. REQUIRED: One follow-up question
 
                 Examples of your tone:
@@ -138,8 +143,8 @@ if prompt := st.chat_input("Ask about shows..."):
                 - "Do you prefer something emotionally stirring or lighthearted?"
                 - "Are you drawn to contemporary works or timeless classics?"
 
-                You don't just list shows - you craft experiences. Always end with the ticket link and a follow-up question."""
-
+                You don't just list shows - you craft experiences. Always end with the calendar link and a follow-up question."""
+                
                 message = client.messages.create(
                     model="claude-sonnet-4-20250514",
                     max_tokens=1024,
