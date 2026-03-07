@@ -122,6 +122,8 @@ if prompt := st.chat_input("Ask about shows..."):
 
                 Speak with elegance and warmth. Each recommendation should feel personally curated.
 
+                IMPORTANT: Recommend a maximum of 3 shows. If more options exist, mention that other choices are available but focus on your top 3 selections.
+
                 Examples of your tone:
                 - "For an evening that balances spectacle with substance, I'd recommend..."
                 - "If you're seeking something that will resonate with the entire family..."
