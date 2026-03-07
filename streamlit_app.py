@@ -159,6 +159,7 @@ if prompt := st.chat_input("Ask about shows..."):
                         model="claude-sonnet-4-20250514",
                         max_tokens=1024,
                         tools=tools,
+                        system=system_prompt,
                         messages=[
                             {"role": "user", "content": prompt},
                             {"role": "assistant", "content": message.content},
